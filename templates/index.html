@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMB Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Title Container -->
+        <div class="title-container">
+            <h1>AMB Video Downloader</h1>
+        </div>
+
+        <!-- Multiplatform Container -->
+        <div class="multiplatform-container">
+            <h2>Multiplatform Video Downloader</h2>
+            <div class="platform-labels">
+                <div class="platform-label">TikTok</div>
+                <div class="platform-label">Instagram</div>
+                <div class="platform-label">YouTube</div>
+                <div class="platform-label">Facebook</div>
+            </div>
+        </div>
+
+        <!-- URL Container -->
+        <div class="url-container">
+            <h2>Enter URL</h2>
+            <form method="post">
+                <input id="url" name="url" style="border-radius: 20;" required></input>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Download</button>
+            </form>
+        </div>
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <div class="flash-messages">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+my_video_downloader/
+├── app.py
+├── downloader.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── styles.css

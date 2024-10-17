@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("/static/rm183-wan-11.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    
+    border-radius: 10px;
+    text-align: center;
+}
+
+.title-container {
+    margin-bottom: 20px;
+}
+
+.title-container h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #f1ebeb;
+}
+
+.multiplatform-container {
+    margin-bottom: 20px;
+}
+
+.multiplatform-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color:#28a745;
+}
+
+.platform-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.platform-label {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 10px;
+    background-color: #5189d2;
+    border-radius: 5px;
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.url-container {
+    margin-bottom: 20px;
+}
+
+.url-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f3efef;
+}
+
+#url {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.flash-messages {
+    margin-top: 20px;
+    color: rgb(59, 221, 124);
+    font-size: 1.2em;
+}
